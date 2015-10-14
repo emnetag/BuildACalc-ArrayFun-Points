@@ -79,6 +79,22 @@ func arrOperation(op: ([Int]) -> Double, numArray: [Int]) -> Double {
 
 print("To prove my point, the average value in \(testArr1) is \(arrOperation(avg, numArray: testArr1))" + "\n")
 
+// POINTS 
+
+let tuplePoint1 = (1,2)
+let tuplePoint2 = (3,4)
+
+func addPoints(point1: (x: Int, y: Int), point2: (x: Int, y: Int)) -> (x: Int, y: Int) {
+    return (point1.x + point2.x, point1.y + point2.y)
+}
+
+func subPoints(point1: (x: Int, y: Int), point2: (x: Int, y: Int)) -> (x: Int, y: Int) {
+    return (point1.x - point2.x, point1.y - point2.y)
+}
+
+
+print("Adding (1, 2) and (3, 4) yields \(addPoints(tuplePoint1, point2: tuplePoint2))" + "\n")
+print("Subtract (3, 4) from (1, 2) and... \(subPoints(tuplePoint1, point2: tuplePoint2))")
 
 
 
